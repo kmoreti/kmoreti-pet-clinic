@@ -14,7 +14,7 @@
 	</parent>
 	<groupId>com.moreti</groupId>
 	<artifactId>kmoreti-pet-clinic</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>kmoreti-pet-clinic</name>
 	<description>KMoreti Pet Clinic</description>
 
@@ -40,7 +40,7 @@
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:kmoreti/kmoreti-pet-clinic.git</developerConnection>
-	  <tag>kmoreti-pet-clinic-0.0.1</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 </project>
