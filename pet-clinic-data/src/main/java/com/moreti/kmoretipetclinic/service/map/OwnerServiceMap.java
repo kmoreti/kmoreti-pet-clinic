@@ -3,9 +3,11 @@ package com.moreti.kmoretipetclinic.service.map;
 import com.moreti.kmoretipetclinic.model.Owner;
 import com.moreti.kmoretipetclinic.service.CrudService;
 import com.moreti.kmoretipetclinic.service.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {
