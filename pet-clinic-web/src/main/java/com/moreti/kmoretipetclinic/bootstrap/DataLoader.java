@@ -1,28 +1,38 @@
 package com.moreti.kmoretipetclinic.bootstrap;
 
 import com.moreti.kmoretipetclinic.model.Owner;
+import com.moreti.kmoretipetclinic.model.PetType;
 import com.moreti.kmoretipetclinic.model.Vet;
 import com.moreti.kmoretipetclinic.service.OwnerService;
-import com.moreti.kmoretipetclinic.service.PetService;
+import com.moreti.kmoretipetclinic.service.PetTypeService;
 import com.moreti.kmoretipetclinic.service.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import java.sql.SQLOutput;
 
 @Component
 public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
+    private final PetTypeService petTypeService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
+        this.petTypeService = petTypeService;
     }
 
     @Override
     public void run(String... args) throws Exception {
+
+        PetType dog = new PetType();
+        dog.setName("Dog");
+        PetType savedDogType = petTypeService.save(dog);
+
+        PetType cat = new PetType();
+        cat.setName("Cat");
+        PetType savedCatType = petTypeService.save(cat);
+
         Owner owner1 = new Owner();
         owner1.setFirstName("Michael");
         owner1.setLastName("Weston");
