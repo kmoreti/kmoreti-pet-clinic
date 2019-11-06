@@ -2,9 +2,11 @@ package com.moreti.kmoretipetclinic.service.map;
 
 import com.moreti.kmoretipetclinic.model.Pet;
 import com.moreti.kmoretipetclinic.service.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
