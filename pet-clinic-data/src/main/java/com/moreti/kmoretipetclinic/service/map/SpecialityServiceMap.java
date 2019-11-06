@@ -2,9 +2,11 @@ package com.moreti.kmoretipetclinic.service.map;
 
 import com.moreti.kmoretipetclinic.model.Speciality;
 import com.moreti.kmoretipetclinic.service.SpecialityService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class SpecialityServiceMap extends AbstractMapService<Speciality, Long> implements SpecialityService {
 
     @Override
