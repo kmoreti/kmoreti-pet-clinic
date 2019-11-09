@@ -1,6 +1,6 @@
 package com.moreti.kmoretipetclinic.controllers;
 
-import com.moreti.kmoretipetclinic.service.VetService;
+import com.moreti.kmoretipetclinic.services.VetService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

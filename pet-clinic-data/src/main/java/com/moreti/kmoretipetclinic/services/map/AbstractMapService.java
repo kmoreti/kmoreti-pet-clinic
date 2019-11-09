@@ -1,4 +1,4 @@
-package com.moreti.kmoretipetclinic.service.map;
+package com.moreti.kmoretipetclinic.services.map;
 
 import com.moreti.kmoretipetclinic.model.BaseEntity;
 

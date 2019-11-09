@@ -1,4 +1,4 @@
-package com.moreti.kmoretipetclinic.service;
+package com.moreti.kmoretipetclinic.services;
 
 import java.util.Set;
 

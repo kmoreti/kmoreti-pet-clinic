@@ -1,10 +1,10 @@
 package com.moreti.kmoretipetclinic.bootstrap;
 
 import com.moreti.kmoretipetclinic.model.*;
-import com.moreti.kmoretipetclinic.service.OwnerService;
-import com.moreti.kmoretipetclinic.service.PetTypeService;
-import com.moreti.kmoretipetclinic.service.SpecialityService;
-import com.moreti.kmoretipetclinic.service.VetService;
+import com.moreti.kmoretipetclinic.services.OwnerService;
+import com.moreti.kmoretipetclinic.services.PetTypeService;
+import com.moreti.kmoretipetclinic.services.SpecialityService;
+import com.moreti.kmoretipetclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

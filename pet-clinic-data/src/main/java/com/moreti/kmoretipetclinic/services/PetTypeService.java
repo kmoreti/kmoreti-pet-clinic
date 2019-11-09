@@ -1,4 +1,4 @@
-package com.moreti.kmoretipetclinic.service;
+package com.moreti.kmoretipetclinic.services;
 
 import com.moreti.kmoretipetclinic.model.PetType;
 

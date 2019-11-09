@@ -1,7 +1,7 @@
-package com.moreti.kmoretipetclinic.service.map;
+package com.moreti.kmoretipetclinic.services.map;
 
 import com.moreti.kmoretipetclinic.model.PetType;
-import com.moreti.kmoretipetclinic.service.PetTypeService;
+import com.moreti.kmoretipetclinic.services.PetTypeService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
