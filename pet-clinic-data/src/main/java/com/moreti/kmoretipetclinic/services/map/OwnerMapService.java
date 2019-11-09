@@ -5,11 +5,13 @@ import com.moreti.kmoretipetclinic.model.Pet;
 import com.moreti.kmoretipetclinic.services.OwnerService;
 import com.moreti.kmoretipetclinic.services.PetService;
 import com.moreti.kmoretipetclinic.services.PetTypeService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     private final PetService petService;
