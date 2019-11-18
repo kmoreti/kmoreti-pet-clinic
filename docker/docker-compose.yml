@@ -1,0 +1,9 @@
+#docker-compose.yml
+version: '3.3'
+services:
+  pet-clinic:
+    build:
+      context: ../pet-clinic-web/target/
+      dockerfile: ../../docker/Dockerfile
+    ports:
+      - "8080:8080"

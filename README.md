@@ -3,3 +3,7 @@
 # kmoreti-pet-clinic
 
 KMoreti Pet Clinic App
+
+## Docker
+cd /docker
+docker-compose up --build 
